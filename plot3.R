@@ -24,8 +24,8 @@ data$Date <- as.Date(data$Date, format = "%d/%m/%Y")
 dataset <- data[data$Date == "2007-02-01" | data$Date == "2007-02-02",]
 dataset$datetime <- with(dataset, as.POSIXct(paste(Date, Time)))
 #Open PNG device and set dimensions
-png(filename = "plot4.png", width = 480, height = 480)
-#Plot 4
+png(filename = "plot3.png", width = 480, height = 480)
+#Plot 3
 
 yticks <- seq(0, 30, 10)
 plot(dataset$datetime, dataset$Sub_metering_1, col = "black", type = "n", main = "", xlab = "", yaxt = "n", ylab = "Energy sub metering")
